@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 03</title>
+</head>
+<body>
+    <h1>Ejercicio 03</h1>
+    <form action="">
+		<div>
+			<label>1er número</label>
+			<input type="text" name="n1" id="n1">
+		</div>
+		<div>
+			<label>2do número</label>
+			<input type="text" name="n2" id="n2">
+		</div>
+		<div>
+			<button type="button" onclick="suma()">Ejecutar</button>
+		</div>
+	</form>
+    <script>
+        function suma(){
+            let n1 = parseInt(document.getElementById('n1').value);
+            let n2 = parseInt(document.getElementById('n2').value);
+            let suma;
+            suma = n1 + n2;
+            document.write('La suma es de ', suma);
+        }
+    </script>
+</body>
+</html>
